@@ -1,0 +1,275 @@
+/* CUSTOM VARIABLES */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-dpurple: #7c5985;
+  --color-lpurple: #c48cd1;
+  --color-teal: #77d19e;
+  --color-grey: #999590;
+  --color-orange: #d19245;
+}
+
+/* CUSTOM VARIABLES END*/
+
+/* BASE STYLES */
+
+html {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("././image/rock-landscape.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 3.25rem;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.subheader {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 3em;
+  margin-left: 3vw;
+  margin-bottom: 0;
+  margin-top: 1vh;
+}
+
+/* BASE STYLES END */
+
+/* NAV START */
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  width: 100%;
+  background-color: #999590aa;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list li a {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+/* NAV END */
+
+/* NEXT LINKS START */
+
+.next-link {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 5vw 4vw 0;
+}
+
+/* NEXT LINKS END */
+
+/* WELCOME START */
+
+#welcome-section {
+  padding: 0;
+}
+
+.welcome-text {
+  height: 100%;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-size: 2rem;
+  display: block;
+}
+
+.title {
+  position: relative;
+}
+
+.color-block {
+  position: absolute;
+  float: left;
+  bottom: 20px;
+  background-color: var(--color-orange);
+  height: 100px;
+  width: 75vw;
+  left: 0;
+  z-index: -1;
+}
+
+.welcome {
+  box-shadow: 5px;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 13rem;
+  text-align: center;
+  padding-top: 12.5rem;
+  padding-right: 5rem;
+  z-index: 5;
+}
+
+.welcome-sub {
+  text-align: right;
+  margin: 0 25vw 1vh 10vw;
+  /* background-color: var(--color-orange);  */
+}
+
+.welcome-desc {
+  text-align: right;
+  margin: 0 15vw 0 10vw;
+  /* background-color: var(--color-lpurple); */
+}
+
+/* WELCOME END */
+
+/* ABOUT START */
+
+section #about {
+  height: 80vh;
+}
+
+.about-header {
+  font-size: 3em;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+
+.about-box {
+  padding: 0 3rem;
+  height: 70%;
+}
+
+.about-desc {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 7.5vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  line-height: 6vh;
+}
+
+#icon-container {
+  height: 60%;
+  padding-top: 10vh;
+  letter-spacing: 3vw;
+  text-align: center;
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
+.fab .fas {
+  font-size: 30rem;
+  text-align: center;
+  padding: 5vh 10vw;
+}
+
+/* ABOUT END */
+
+/* PROJECTS START */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  justify-content: center;
+  row-gap: 2rem;
+  column-gap: 5rem;
+  padding-top: 3rem;
+  margin: 0 10rem;
+}
+
+.project-tile {
+  justify-items: center;
+  background-color: rgba(128, 127, 127, 0.651);
+  border-radius: 2%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: scale-down;
+  border-radius: 2%;
+}
+
+.project-title {
+  height: 30px;
+  text-align: center;
+}
+
+#projects > .next {
+  margin-top: 3rem;
+  height: 2.5rem;
+}
+
+/* PROJECTS END */
+
+/* CONTACT START */
+
+#contact {
+  height: 60vh;
+}
+
+.contact-header {
+  margin-top: 5vh;
+}
+
+.contact-icons {
+  font-family: "IBM Plex Mono", monospace;
+  box-shadow: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15rem;
+}
+
+.contact-btn > i {
+  font-size: 1em;
+  margin-right: 0.5rem;
+}
+
+.contact-btn {
+  font-size: 2em;
+  margin: 0 2rem;
+  justify-content: center;
+}
+
+/* CONTACT END */
