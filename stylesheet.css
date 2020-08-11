@@ -158,6 +158,25 @@ a {
   /* background-color: var(--color-lpurple); */
 }
 
+@media (max-width: 1400px) {
+  .welcome {
+    font-size: 15vw;
+  }
+  .color-block {
+    height: 20%;
+  }
+  .welcome-sub,
+  .welcome-desc {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1401px) {
+  .color-block {
+    width: 75%;
+  }
+}
+
 /* WELCOME END */
 
 /* ABOUT START */
@@ -203,6 +222,12 @@ section #about {
   padding: 5vh 10vw;
 }
 
+@media (max-width: 700px) {
+  .about-desc {
+    font-size: 3.5vw;
+    line-height: 5vh;
+  }
+}
 /* ABOUT END */
 
 /* PROJECTS START */
@@ -231,8 +256,12 @@ img {
 }
 
 .project-title {
-  height: 30px;
+  height: 35px;
   text-align: center;
+  vertical-align: middle;
+  padding-top: 5px;
+  font-family: "IBM Plex Mono", monospace;
+  box-shadow: 5px 10px 25px #000000c5;
 }
 
 #projects > .next {
@@ -271,6 +300,19 @@ img {
   font-size: 2em;
   margin: 0 2rem;
   justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+  }
+
+  .contact-btn {
+    padding: 2vh;
+  }
 }
 
 /* CONTACT END */
