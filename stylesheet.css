@@ -27,7 +27,8 @@ html {
 }
 
 body {
-  background-image: url("././image/rock-landscape.jpg");
+  background-image: url("image/rock-landscape.jpg");
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
